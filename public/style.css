@@ -1,0 +1,81 @@
+@charset "utf-8";
+body{
+    overflow: hidden;
+	background-image:url(../img/bg.jpg);
+	background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	
+}
+#logo {
+    float: right;
+    width: 35%;
+    height: 30%;
+    margin: 7% 33%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "HERO LIGHT";
+    font-size: 30px;
+    border: 1px solid;
+    padding: 5px;
+    transition: 1.5s;
+    
+        
+}
+
+a:hover{
+    background-color: bisque;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+#links {
+    margin: 0 33%;
+    position: relative;
+    text-align: center;
+    top:-70px;
+    
+    
+    
+}
+
+#wrapper{
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index: 1000;
+position: fixed;
+}
+#loader {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.loaded #loader{
+	opacity: 0;
+	transition:  0.5s;
+
+}
+
+.loaded #wrapper{
+    opacity: 0;
+    transition: 1s;
+	visibility: hidden;
+}
+img {
+    width: 1366px;
+    height: 100%;
+}
